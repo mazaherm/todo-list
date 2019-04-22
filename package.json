@@ -1,0 +1,29 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "todo list in vanilla js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine",
+    "scss": "node-sass --watch src/styles/scss -o src/styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mazaherm/todo-list.git"
+  },
+  "keywords": [
+    "todo-list"
+  ],
+  "author": "Mazaher Muraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mazaherm/todo-list/issues"
+  },
+  "homepage": "https://github.com/mazaherm/todo-list#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.4.0"
+  }
+}
