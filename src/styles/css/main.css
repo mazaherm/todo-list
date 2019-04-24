@@ -17,6 +17,9 @@ footer {
   height: 35px;
   width: 35px; }
 
+.checked {
+  text-decoration: line-through; }
+
 #container {
   display: flex;
   flex-flow: column wrap;
