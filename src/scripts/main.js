@@ -34,6 +34,7 @@ const addListItem = (event) => {
     let newItemValue = document.createTextNode(inputValue)
     newListItem.appendChild(newItemValue)
     document.querySelector('ul').appendChild(newListItem)
+    event.target.value = '' // clears the input on enter keypress
   }
 }
 
