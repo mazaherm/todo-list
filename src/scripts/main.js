@@ -12,10 +12,12 @@ for (let i = 0; i < listItem.length; i++) {
 /**
  * This deletes an item from the list on click
  */
-const deleteItem = document.getElementsByTagName('span')
-
-for (let i = 0; i < deleteItem.length; i++) {
-  deleteItem[i].addEventListener('click', () => {
-    deleteItem[i].parentNode.remove()
-  })
+const deleteItem = (event) => {
+  if (event.target.tagName === 'SPAN') {
+    let span = event.target, li = span.parentNode, ul = li.parentNode
+    ul.removeChild(li)
+    event.stopPropagation()
+  }
 }
+
+document.addEventListener('click', deleteItem)
