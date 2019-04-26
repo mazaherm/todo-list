@@ -21,3 +21,20 @@ const deleteItem = (event) => {
 }
 
 document.addEventListener('click', deleteItem)
+
+/**
+ * This adds a new item to the list
+ */
+
+const addListItem = (event) => {
+  let key = event.which || event.keyCode
+  if (event.target.tagName === 'INPUT' && key === 13) {
+    let inputValue = event.target.value
+    let newListItem = document.createElement('LI')
+    let newItemValue = document.createTextNode(inputValue)
+    newListItem.appendChild(newItemValue)
+    document.querySelector('ul').appendChild(newListItem)
+  }
+}
+
+document.addEventListener('keypress', addListItem)
