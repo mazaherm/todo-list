@@ -17,10 +17,13 @@ footer {
   height: 35px;
   width: 35px; }
 
-.checked {
-  text-decoration: line-through; }
-
 #container {
   display: flex;
   flex-flow: column wrap;
-  align-items: center; }
+  width: 300px;
+  margin: 10px auto 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  background-color: #f7f7f7; }
+
+.checked {
+  text-decoration: line-through; }
