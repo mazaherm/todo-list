@@ -74,7 +74,9 @@ input {
 
 .click-icons {
   height: 20px;
-  width: 20px; }
+  width: 50px; }
 
 .checked {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+  color: #E74C3C;
+  font-style: italic; }
