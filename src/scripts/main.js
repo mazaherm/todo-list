@@ -23,19 +23,26 @@ const deleteItem = (event) => {
 document.addEventListener('click', deleteItem)
 
 /**
- * This adds a new item to the list
+ * This adds a new item to the list on ENTER keypress
  */
 
-const addListItem = (event) => {
+const addListItemOnEnter = (event) => {
   let key = event.which || event.keyCode
   if (event.target.tagName === 'INPUT' && key === 13) {
     let inputValue = event.target.value
-    let newListItem = document.createElement('LI')
+    let newLi = document.createElement('LI')
+
+    // creates delete span inside newLi
+    let deleteButton = document.createElement('SPAN')
+    deleteButton.innerHTML = 'X '
+    newLi.appendChild(deleteButton)
+
     let newItemValue = document.createTextNode(inputValue)
-    newListItem.appendChild(newItemValue)
-    document.querySelector('ul').appendChild(newListItem)
-    event.target.value = '' // clears the input on enter keypress
+    newLi.appendChild(newItemValue)
+    document.querySelector('ul').appendChild(newLi)
+
+    event.target.value = '' // clears the input on ENTER keypress
   }
 }
 
-document.addEventListener('keypress', addListItem)
+document.addEventListener('keypress', addListItemOnEnter)
