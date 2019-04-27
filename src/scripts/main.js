@@ -26,7 +26,7 @@ document.addEventListener('click', deleteItem)
  * This adds a new item to the list on ENTER keypress
  */
 
-const deleteIcon = "<img class='click-icons' src='./assets/icons/delete.svg' alt='delete'/>"
+const deleteIcon = "<img class='delete-icon shake' src='./assets/icons/delete.svg' alt='delete'/>"
 
 const addListItemOnEnter = (event) => {
   let key = event.which || event.keyCode

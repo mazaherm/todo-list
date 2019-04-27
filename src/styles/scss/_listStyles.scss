@@ -22,6 +22,7 @@ ul {
     height: 40px;
     line-height: 40px;
     color: #666666;
+    display: flex;
 
     &:nth-child(2n) {
       background-color: #F7F7F7;

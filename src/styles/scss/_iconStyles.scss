@@ -1,4 +1,20 @@
-.click-icons {
+.delete-icon {
   height: 20px;
   width: 50px;
+  margin-top: 8px;
+  cursor: pointer;
+
+  &:hover {
+    -webkit-animation: shake 0.1s ease-in-out 0.1s infinite alternate;
+  }
+}
+
+@keyframes shake {
+  from {
+    -webkit-transform: rotate(10deg);
+ }
+ to {
+   -webkit-transform-origin:center center;
+   -webkit-transform: rotate(-10deg);
+ }
 }
