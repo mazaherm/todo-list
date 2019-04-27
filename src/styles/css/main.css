@@ -72,5 +72,9 @@ input {
     border: 3px solid #2980B9;
     outline: none; }
 
+.click-icons {
+  height: 20px;
+  width: 20px; }
+
 .checked {
   text-decoration: line-through; }
