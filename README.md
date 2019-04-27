@@ -9,14 +9,6 @@ This is a To-do list.
 
 To pull the repo, simply `clone` or `download` it and open the `index.html` file. There is no need to `yarn` or `yarn start` as the only packages the node modules is using is to convert the scss into css so that is can be read by the browser.
 
-## Demo
-
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true">
-    <source src="./assets/demo/todo-demo.webm" type="video/webm">
-  </video>
-</figure>
-
 ## Built with 
 
 * HTML5
