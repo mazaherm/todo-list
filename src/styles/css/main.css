@@ -54,7 +54,8 @@ ul {
     background-color: #FFFFFF;
     height: 40px;
     line-height: 40px;
-    color: #666666; }
+    color: #666666;
+    display: flex; }
     ul li:nth-child(2n) {
       background-color: #F7F7F7; }
 
@@ -72,9 +73,20 @@ input {
     border: 3px solid #2980B9;
     outline: none; }
 
-.click-icons {
+.delete-icon {
   height: 20px;
-  width: 50px; }
+  width: 50px;
+  margin-top: 8px;
+  cursor: pointer; }
+  .delete-icon:hover {
+    -webkit-animation: shake 0.1s ease-in-out 0.1s infinite alternate; }
+
+@keyframes shake {
+  from {
+    -webkit-transform: rotate(10deg); }
+  to {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-10deg); } }
 
 .checked {
   text-decoration: line-through;
